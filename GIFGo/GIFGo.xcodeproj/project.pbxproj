@@ -14,6 +14,7 @@
 		7A645715285841C600588E0B /* GIFGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A645714285841C600588E0B /* GIFGoTests.swift */; };
 		7A64571F285841C600588E0B /* GIFGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A64571E285841C600588E0B /* GIFGoUITests.swift */; };
 		7A645721285841C600588E0B /* GIFGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A645720285841C600588E0B /* GIFGoUITestsLaunchTests.swift */; };
+		7A771097285862E600EC974F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A771096285862E600EC974F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7A64571A285841C600588E0B /* GIFGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIFGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A64571E285841C600588E0B /* GIFGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFGoUITests.swift; sourceTree = "<group>"; };
 		7A645720285841C600588E0B /* GIFGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A771096285862E600EC974F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		7A6456F7285841C300588E0B = {
 			isa = PBXGroup;
 			children = (
+				7A7710932858629500EC974F /* GIF Maker */,
 				7A645702285841C300588E0B /* GIFGo */,
 				7A645713285841C600588E0B /* GIFGoTests */,
 				7A64571D285841C600588E0B /* GIFGoUITests */,
@@ -125,6 +128,22 @@
 				7A645720285841C600588E0B /* GIFGoUITestsLaunchTests.swift */,
 			);
 			path = GIFGoUITests;
+			sourceTree = "<group>";
+		};
+		7A7710932858629500EC974F /* GIF Maker */ = {
+			isa = PBXGroup;
+			children = (
+				7A771094285862A900EC974F /* ViewController */,
+			);
+			path = "GIF Maker";
+			sourceTree = "<group>";
+		};
+		7A771094285862A900EC974F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7A771096285862E600EC974F /* HomeViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			files = (
 				7A645706285841C300588E0B /* ContentView.swift in Sources */,
 				7A645704285841C300588E0B /* GIFGoApp.swift in Sources */,
+				7A771097285862E600EC974F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
