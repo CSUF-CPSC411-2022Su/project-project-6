@@ -3,6 +3,13 @@ import UIKit
 import GiphyUISDK
 import AVKit
 
+
+var titleMenuArray = ["Photos to GIF","Video to GIF","GIF to Video","Slow Motion to GIF"]
+let giphy = GiphyViewController()
+var sliderImageArray = [#imageLiteral(resourceName: "photo to gif"),#imageLiteral(resourceName: "video to gif"),#imageLiteral(resourceName: "gif to video"),#imageLiteral(resourceName: "photo to gif"),#imageLiteral(resourceName: "video to gif"),#imageLiteral(resourceName: "gif to video")]
+var counter = 0
+
+
 func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -38,3 +45,4 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         cell.rightBtn.tag = 3
         cell.rightBtn.addTarget(self, action: #selector(OpenScreenFromMenu), for: .touchUpInside)
     }
+}
