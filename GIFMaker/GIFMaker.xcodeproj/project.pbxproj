@@ -94,6 +94,8 @@
 		7A6E7214286D60710037EF2C /* GIFMaker */ = {
 			isa = PBXGroup;
 			children = (
+				7A6E7241286D64440037EF2C /* View */,
+				7A6E723F286D64190037EF2C /* ViewModel */,
 				7A6E7215286D60710037EF2C /* GIFMakerApp.swift */,
 				7A6E7217286D60710037EF2C /* ContentView.swift */,
 				7A6E7219286D60730037EF2C /* Assets.xcassets */,
@@ -125,6 +127,20 @@
 				7A6E7232286D60730037EF2C /* GIFMakerUITestsLaunchTests.swift */,
 			);
 			path = GIFMakerUITests;
+			sourceTree = "<group>";
+		};
+		7A6E723F286D64190037EF2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7A6E7241286D64440037EF2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
