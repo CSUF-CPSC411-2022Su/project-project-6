@@ -66,47 +66,6 @@ struct LoginPage: View {
                     .textInputAutocapitalization(.never)
                     .padding(.top, 10)
                 
-                // Note: User Prompt to ask to store Login using FaceID on next time
-                if loginModel.getBioMetricStatus() {
-                    Group {
-                        if loginModel.useFaceID {
-                            Button {
-                                // Note: Do FaceID Action
-                                Task {
-                                    do {
-                                        try await loginModel.authenticateUser()
-                                    } catch {
-                                        loginModel.errorMsg = error.localizedDescription
-                                        loginModel.showError.toggle()
-                                    }
-                                }
-                            } label: {
-                                VStack(alignment: .leading, spacing: 10) {
-                                    Label {
-                                        Text("Use FaceId to Login into Your Account")
-                                    } icon: {
-                                        Image(systemName: "faceid")
-                                    }
-                                    .font(.caption)
-                                    .foregroundColor(.gray)
-                                    
-                                    Text("Note: You can turn off from Setting!")
-                                        .font(.caption2)
-                                        .foregroundColor(.gray)
-                                }
-                            }
-                            .hLeading()
-
-                        } else {
-                            Toggle(isOn: $useFaceID) {
-                                Text("Use FaceID to Login")
-                                    .foregroundColor(.gray)
-                            }
-                        }
-                    }
-                    .padding(.vertical, 25)
-                }
-                
                 // Note: Login Button
                 Button {
                     Task {
