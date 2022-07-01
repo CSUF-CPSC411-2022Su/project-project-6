@@ -28,6 +28,17 @@ struct DetailView: View {
             }) {
                 Text("Save to Gallery")
             }
+            
+
+            var body: some View {
+                Button(action: {
+                    self.showsAlert = true
+                }, label: {
+                    Text("asdf")
+                }).presentation($showsAlert, alert: {
+                  Alert(title: Text("Hello"))
+        })
+    }
         }
     }
 }
