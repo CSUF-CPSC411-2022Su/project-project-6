@@ -34,7 +34,7 @@ struct DetailView: View {
                 Button(action: {
                     self.showsAlert = true
                 }, label: {
-                    Text("asdf")
+                    Text("alert message")
                 }).presentation($showsAlert, alert: {
                   Alert(title: Text("Saved Successfully"))
         })
