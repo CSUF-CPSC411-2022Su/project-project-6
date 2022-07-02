@@ -36,7 +36,7 @@ struct DetailView: View {
                 }, label: {
                     Text("asdf")
                 }).presentation($showsAlert, alert: {
-                  Alert(title: Text("Hello"))
+                  Alert(title: Text("Saved Successfully"))
         })
     }
         }
